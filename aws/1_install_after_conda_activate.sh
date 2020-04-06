@@ -1,7 +1,5 @@
 #!/bin/bash
 
-git clone https://github.com/lbfs/DeepFaceLab_Linux.git
-cd DeepFaceLab_Linux
 git clone https://github.com/iperov/DeepFaceLab.git
 python -m pip install -r ./DeepFaceLab/requirements-cuda.txt
 

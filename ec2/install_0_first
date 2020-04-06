@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install system packages
-sudo apt install p7zip-full
+sudo apt install ffmpeg
 
 # Update conda
 conda update -n base -c defaults conda

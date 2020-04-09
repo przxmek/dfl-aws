@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-source env.sh
+
+source scripts/env.sh
 
 rm -r "$DFL_WORKSPACE"
 mkdir "$DFL_WORKSPACE"

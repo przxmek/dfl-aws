@@ -6,6 +6,7 @@
 ##   - Deep Learning AMI (Ubuntu 18.04) Version 27.0 (ami-008d8ed4bd7dc2485)
 ##                                                                           ##
 ###############################################################################
+set -e
 
 echo ">>> Installing EFL DL stack. Sit back and relax..."
 
@@ -34,7 +35,7 @@ python -m pip install -r ./DeepFaceLab/requirements-cuda.txt
 
 ### Download CelebA Dataset
 echo ">>> Installing pretrained datasets (CelebA, Quick96)..."
-wget https://github.com/iperov/DeepFaceLab/releases/download/06.04.2020/DeepFaceLab_NVIDIA_build_04_06_$7z x DeepFaceLab_NVIDIA_build_04_06_2020.exe
+wget https://github.com/iperov/DeepFaceLab/releases/download/06.04.2020/DeepFaceLab_NVIDIA_build_04_06_2020.exe
 7z x DeepFaceLab_NVIDIA_build_04_06_2020.exe
 rm DeepFaceLab_NVIDIA_build_04_06_2020.exe
 mv DeepFaceLab_NVIDIA/_internal/pretrain_CelebA/ .
